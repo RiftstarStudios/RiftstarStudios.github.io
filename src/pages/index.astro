@@ -1,7 +1,14 @@
 ---
 import Base from '../layouts/Base.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Games from '../components/Games.astro';
+import Community from '../components/Community.astro';
 ---
 
-<Base title="Riftstar Games | Home" description="🌎 Official Riftstar Games Website">
-	
+<Base title="Riftstar Games | Home" description="🌎 Official Riftstar Games Website" linker="/">
+	<Hero/>
+	<About/>
+	<Games/>
+	<Community/>
 </Base>
