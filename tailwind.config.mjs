@@ -2,27 +2,38 @@
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
+		spacing: {
+			'1': '4px',
+			'2': '8px',
+			'3': '12px',
+			'4': '16px',
+			'5': '24px',
+			'6': '32px',
+			'7': '48px',
+			'8': '64px',
+			'9': '128px',
+		},
+		screens: {
+			'mc': '372px',
+			'sm': '452px',
+			'nm': '640px',
+			'md': '768px',
+			'lg': '1024px',
+			'xl': '1280px',
+			'2xl': '1536px',
+		},
 		colors: {
 			'white': {
-				100: '#FFFFFF',
-				200: '#F9F9F9',
+				100: '#F5F5F5',
 				200: '#F3F8FF',
 			},
-			'blue': {
-				100: '#113A5D',
-				200: '#062743',
-			},
-			'red': '#FF7A8A',
+			'red': '#F05454',
 			'green': {
 				100: '#34d399',
 				200: '#10b981',
-				200: '#059669',
+				300: '#059669',
 			},
-		},
-		extend: {
-			boxShadow: {
-				'3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
-			},
+			'black': '#121212',
 		},
 	},
 	plugins: [],

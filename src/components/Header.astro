@@ -1,3 +1,48 @@
-<header>
-
+<header class="bg-black min-w-[270px] w-screen fixed top-0 inset-x-0 h-fit -z-100">
+    <div class="min-w-[270px] nm:container nm:mx-auto px-5 py-3 flex flex-row justify-between items-center">
+        <img src="/logo.png" alt="logo" class="h-6 w-auto">
+        <div class="hidden nm:flex flex-row gap-4 h-min">
+            <a href="#" class="px-3 md:px-4 py-1 text-white-100 hover:text-black text-base font-semibold bg-black hover:bg-white-100 rounded-md duration-200 ease-in-out">Home</a>
+            <a href="#" class="px-3 md:px-4 py-1 text-white-100 hover:text-black text-base font-semibold bg-black hover:bg-white-100 rounded-md duration-200 ease-in-out">About</a>
+            <a href="#" class="px-3 md:px-4 py-1 text-white-100 hover:text-black text-base font-semibold bg-black hover:bg-white-100 rounded-md duration-200 ease-in-out">Games</a>
+            <a href="#" class="px-3 md:px-4 py-1 text-white-100 hover:text-black text-base font-semibold bg-black hover:bg-white-100 rounded-md duration-200 ease-in-out">Social Media</a>
+        </div>
+        <div class="flex justify-center items-center nm:hidden px-2 py-2 text-white-100 text-base font-extrabold rounded-md duration-200 ease-in-out cursor-pointer" id="nav-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6" id="nav-icon-open">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 hidden" id="nav-icon-close">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+        </div>
+    </div>
+    <div class="min-w-[270px] absolute top-0 left-0 h-screen w-screen bg-black nm:hidden hidden" id="nav-menu">
+        <div class="nm:container nm:mx-auto gap-3 px-5 py-3 flex flex-col w-full">
+            <a href="#" class="px-3 py-2 text-white-100 hover:text-black bg-black hover:bg-white-100 flex flex-row gap-2 justify-between w-full text-base font-semibold rounded-md duration-200 ease-in-out" id="nav-link">
+                Home
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                </svg>                  
+            </a>
+            <a href="#" class="px-3 py-2 text-white-100 hover:text-black bg-black hover:bg-white-100 flex flex-row gap-2 justify-between w-full text-base font-semibold rounded-md duration-200 ease-in-out" id="nav-link">
+                About
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                </svg>   
+            </a>
+            <a href="#" class="px-3 py-2 text-white-100 hover:text-black bg-black hover:bg-white-100 flex flex-row gap-2 justify-between w-full text-base font-semibold rounded-md duration-200 ease-in-out" id="nav-link">
+                Games
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                </svg>   
+            </a>
+            <a href="#" class="px-3 py-2 text-white-100 hover:text-black bg-black hover:bg-white-100 flex flex-row gap-2 justify-between w-full text-base font-semibold rounded-md duration-200 ease-in-out" id="nav-link">
+                Social Media
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                </svg>   
+            </a>
+        </div>
+    </div>
 </header>
+<script src="../scripts/header.js">
