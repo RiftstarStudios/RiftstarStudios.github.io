@@ -2,10 +2,9 @@
 interface Props {
 	title: string;
 	description: string;
-	linker: string;
 }
 
-const { title, description, linker } = Astro.props;
+const { title, description } = Astro.props;
 
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
@@ -20,9 +19,9 @@ import Footer from '../components/Footer.astro';
 		<link rel="icon" type="image/svg+ico" href="/favicon.ico" />
 		<title>{title}</title>
 	</head>
-	<body class="bg-white-100 w-screen min-w-[300px] max-w-screen min-h-screen h-fit flex flex-col duration-200 font-sans subpixel-antialiased overflow-x-hidden">
-		<Header linker={linker}/>
-		<main class="pt-[56px] z-100">
+	<body class="bg-white-100 w-screen min-w-[300px] max-w-screen min-h-screen h-fit justify-between flex flex-col duration-200 font-sans subpixel-antialiased overflow-x-hidden">
+		<Header/>
+		<main class="pt-[56px] z-100 h-fit">
 			<slot />
 		</main>
 		<Footer/>
