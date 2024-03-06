@@ -4,29 +4,48 @@ import Base from '../layouts/Base.astro';
 
 <Base title="Riftstar Games | Support" description="⭐ Riftstar Games Support Page">
 	<section class="nm:container nm:mx-auto px-5 my-6 flex justify-center items-center">
-        <div class="max-w-[500px] w-fit h-min flex flex-col gap-3 justify-center items-center text-center">
-            <h1 class="text-white font-bold text-6xl">Support Center</h1>
-            <!-- <span class="text-white opacity-50 font-normal text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ex eu augue ultrices, non commodo lacus blandit. Donec dignissim urna at magna dictum, eu dapibus justo porta. Quisque eget congue mauris, in posuere ipsum.</span> -->
-            <form action="" method="post" class="p-5 mt-5 flex flex-col gap-4 rounded-md bg-white/5 ring-1 ring-white/10 w-full max-w-lg text-left">
-                <div class="w-full">
-                    <label for="support-nickname" class="sr-only">Nickname</label>
-                    <input id="support-nickname" name="nickname" type="text" autocomplete="nickname" placeholder="Your game nickname" maxlength="30" minlength="2" class="rounded-md border-0 bg-black/5 px-4 py-2 text-white ring-1 ring-inset ring-white/10 outline-none focus:ring-white/30 text-base font-semibold duration-200 ease-in-out w-full" required>
-                </div>
-                <div class="w-full">
-                    <label for="support-email-address" class="sr-only">Email adress</label>
-                    <input id="support-email-address" name="email" type="email" autocomplete="email" placeholder="Your email adress" maxlength="60" minlength="8" class="rounded-md border-0 bg-black/5 px-4 py-2 text-white ring-1 ring-inset ring-white/10 outline-none focus:ring-white/30 text-base font-semibold duration-200 ease-in-out w-full" required>
-                </div>
-                <h4 class="mt-4 font-bold text-white text-xl">Your question</h4>
-                <div class="w-full">
-                    <label for="support-title" class="sr-only">Title</label>
-                    <input id="support-title" name="title" type="text" autocomplete="" placeholder="Title" maxlength="200" minlength="1" class="rounded-md border-0 bg-black/5 px-4 py-2 text-white ring-1 ring-inset ring-white/10 outline-none focus:ring-white/30 text-base font-semibold duration-200 ease-in-out w-full" required>
-                </div>
-                <div class="w-full">
-                    <label for="support-text" class="sr-only">Question</label>
-                    <textarea id="support-text" name="text" rows="5"autocomplete="" placeholder="Question" maxlength="10000" minlength="1" class="rounded-md border-0 bg-black/5 px-4 py-2 text-white ring-1 ring-inset ring-white/10 outline-none focus:ring-white/30 text-base font-semibold duration-200 ease-in-out w-full" required></textarea>
-                </div>
-                <input type="file" name="file" id="support-file">
-            </form>
+        <div class="w-fit h-min flex flex-col gap-6 justify-center items-center text-center">
+            <div class="mx-auto max-w-2xl text-center">
+                <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Support center</h2>
+                <p class="mt-2 text-lg leading-8 text-white/70">Submit feedback about an issue or ask a question</p>
+            </div>
+            <form action="" method="POST" class="max-w-2xl w-full">
+                <div class="grid grid-cols-1 gap-x-5 gap-y-4 sm:grid-cols-2">
+                    <h4 class="font-semibold text-xl text-white sm:col-span-2 text-center">Contact information</h4>
+                    <input id="support-name" name="name" type="text" autocomplete="given-name" required class="rounded-md border-0 bg-white/5 px-4 py-2 text-white ring-1 ring-inset ring-white/10 outline-none focus:ring-white/30 text-base font-normal duration-200 ease-in-out" placeholder="Your name" minlength="2" maxlength="30">
+                    <select id="support-type" required name="type" class="rounded-md border-0 bg-white/5 px-4 py-2 text-white ring-1 ring-inset ring-white/10 outline-none focus:ring-white/30 text-base font-normal duration-200 ease-in-out">
+                        <option selected="true" hidden value="0">Your region</option>
+                        <option value="1">United states</option>
+                        <option value="2">Europe</option>
+                        <option value="3">Asia</option>
+                        <option value="3">Other</option>
+                    </select>
+                    <input id="support-nickname" name="nickname" type="text" autocomplete="nickname" required class="rounded-md border-0 bg-white/5 px-4 py-2 text-white ring-1 ring-inset ring-white/10 outline-none focus:ring-white/30 text-base font-normal duration-200 ease-in-out sm:col-span-2" placeholder="Your game nickname" minlength="2" maxlength="60">
+                    <input id="support-email-adress" name="email-adress" type="email" autocomplete="email" required class="rounded-md border-0 bg-white/5 px-4 py-2 text-white ring-1 ring-inset ring-white/10 outline-none focus:ring-white/30 text-base font-normal duration-200 ease-in-out sm:col-span-2" placeholder="Your email adress" minlength="8" maxlength="80">
+                    <h4 class="font-semibold text-xl mt-2 text-white sm:col-span-2 text-center">Problem details</h4>
+                    <select id="support-game" required name="game" class="rounded-md border-0 bg-white/5 px-4 py-2 text-white ring-1 ring-inset ring-white/10 outline-none focus:ring-white/30 text-base font-normal duration-200 ease-in-out">
+                        <option selected="true" hidden value="0">Select game</option>
+                        <option value="1">Ghost Runner</option>
+                        <option value="2">Hero Sega</option>
+                        <option value="3">Star Blade</option>
+                        <option value="3">Other</option>
+                    </select>
+                    <select id="support-type" required name="type" class="rounded-md border-0 bg-white/5 px-4 py-2 text-white ring-1 ring-inset ring-white/10 outline-none focus:ring-white/30 text-base font-normal duration-200 ease-in-out">
+                        <option selected="true" hidden value="0">Problem type</option>
+                        <option value="1">Gameplay</option>
+                        <option value="2">Sounds</option>
+                        <option value="3">Controlls</option>
+                        <option value="3">Mechanics</option>
+                        <option value="3">Other</option>
+                    </select>
+                    <input id="support-title" name="title" type="text" autocomplete="" required class="rounded-md border-0 bg-white/5 px-4 py-2 text-white ring-1 ring-inset ring-white/10 outline-none focus:ring-white/30 text-base font-normal duration-200 ease-in-out sm:col-span-2" placeholder="Title" minlength="1" maxlength="200">
+                    <textarea id="support-message" name="message" rows="5" autocomplete="" required class="rounded-md border-0 bg-white/5 px-4 py-2 text-white ring-1 ring-inset ring-white/10 outline-none focus:ring-white/30 text-base font-normal duration-200 ease-in-out sm:col-span-2" placeholder="Message" minlength="1" maxlength="10000"></textarea>
+                    <div class="relative flex items-center gap-3 sm:col-span-2">
+                        <input id="support-agree-age" name="agree-age" type="checkbox" required class="h-4 w-4 rounded-md bg-white/5-2 text-white ring-1 ring-inset ring-white/10 outline-none focus:ring-white/30 text-base font-normal duration-200 ease-in-out">
+                        <label for="support-agree-age" class="font-semibold text-white text-base">I confirm that I am 13 years of age or older</label>
+                    </div>
+                    <button type="submit" class="sm:col-span-2 rounded-md bg-white px-4 py-2 text-base font-semibold text-black mt-2">Send feedback</button>
+              </form>
         </div>
     </section>
 </Base>
