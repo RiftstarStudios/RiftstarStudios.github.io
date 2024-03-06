@@ -1,0 +1,28 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="Riftstar Games | Contact Us" description="⭐ Riftstar Games Contact Page">
+	<section class="nm:container nm:mx-auto px-5 my-6 w-full h-full flex flex-col gap-6 justify-center items-center text-center">
+        <div class="mx-auto max-w-lg text-center">
+            <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Contact Us</h2>
+            <p class="mt-2 text-lg leading-8 text-white/70">All information here will be confidential.</p>
+        </div>
+        <form action="" method="POST" class="max-w-lg w-full">
+            <div class="grid grid-cols-1 gap-x-5 gap-y-4 sm:grid-cols-2">
+                <h4 class="font-semibold text-xl text-white sm:col-span-2 text-center">Contact information</h4>
+                <input id="support-name" name="name" type="text" autocomplete="given-name" required class="rounded-md border-0 bg-white/5 px-4 py-2 text-white ring-1 ring-inset ring-white/10 outline-none focus:ring-white/30 text-base font-normal duration-200 ease-in-out" placeholder="Your first name" minlength="2" maxlength="30">
+                <input id="support-surename" name="surename" type="text" autocomplete="last-name" required class="rounded-md border-0 bg-white/5 px-4 py-2 text-white ring-1 ring-inset ring-white/10 outline-none focus:ring-white/30 text-base font-normal duration-200 ease-in-out" placeholder="Your last name" minlength="2" maxlength="30">
+                <input id="contact-email-adress" name="email-adress" type="email" autocomplete="email" required class="rounded-md border-0 bg-white/5 px-4 py-2 text-white ring-1 ring-inset ring-white/10 outline-none focus:ring-white/30 text-base font-normal duration-200 ease-in-out sm:col-span-2" placeholder="Your email adress" minlength="8" maxlength="80">
+                <input id="contact-tel" name="tel" type="tel" autocomplete="tel" required class="rounded-md border-0 bg-white/5 px-4 py-2 text-white ring-1 ring-inset ring-white/10 outline-none focus:ring-white/30 text-base font-normal duration-200 ease-in-out sm:col-span-2" placeholder="Your phone number" minlength="6" maxlength="26">
+                <h4 class="font-semibold text-xl mt-2 text-white sm:col-span-2 text-center">Message</h4>
+                <input id="contact-title" name="title" type="text" autocomplete="" required class="rounded-md border-0 bg-white/5 px-4 py-2 text-white ring-1 ring-inset ring-white/10 outline-none focus:ring-white/30 text-base font-normal duration-200 ease-in-out sm:col-span-2" placeholder="Title" minlength="1" maxlength="200">
+                <textarea id="contact-message" name="message" rows="5" autocomplete="" required class="rounded-md border-0 bg-white/5 px-4 py-2 text-white ring-1 ring-inset ring-white/10 outline-none focus:ring-white/30 text-base font-normal duration-200 ease-in-out sm:col-span-2" placeholder="Message" minlength="1" maxlength="10000"></textarea>
+                <div class="relative flex items-center gap-3 sm:col-span-2">
+                    <input id="contact-agree-age" name="agree-age" type="checkbox" required class="h-4 w-4 rounded-md bg-white/5-2 text-white ring-1 ring-inset ring-white/10 outline-none focus:ring-white/30 text-base font-normal duration-200 ease-in-out">
+                    <label for="contact-agree-age" class="font-semibold text-white text-base">I confirm that I am 13 years of age or older</label>
+                </div>
+                <button type="submit" class="sm:col-span-2 rounded-md bg-white px-4 py-2 text-base font-semibold text-black mt-2">Send message</button>
+            </form>
+    </section>
+</Base>
