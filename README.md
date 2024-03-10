@@ -1,4 +1,4 @@
-# Official Riftstar Games Website
+# Official Star Project Gmaes Website
 
 ## 🚀 Project Structure
 
