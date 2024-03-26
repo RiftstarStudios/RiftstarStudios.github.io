@@ -1,4 +1,4 @@
-name: StarProjectGames-Website
+name: HeavenStarGames-Website
 
 on:
   # Trigger the workflow every time you push to the `main` branch
