@@ -1,0 +1,19 @@
+---
+interface Props {
+	name: string;
+    rule: string;
+    img_src: string;
+}
+
+const { name, rule, img_src } = Astro.props;
+---
+
+<li>
+    <div class="flex items-center gap-x-5">
+        <img class="h-8 w-8 rounded-full" src={img_src} alt="">
+        <div>
+            <h3 class="text-base/7 font-semibold tracking-tight text-white">{name}</h3>
+            <p class="text-sm/6 font-semibold text-blue">{rule}</p>
+        </div>
+    </div>
+</li>
